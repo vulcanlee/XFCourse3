@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModel="clr-namespace:XFDataBinding.ViewModels"
+             x:Class="XFDataBinding.Views.INPCPage"
+             Title="自己實作 INPC">
+
+    <!--
+    由於不是使用 Prism 框架，所以，BindingContext 要用到的 ViewModel，
+    必須要自己來設定，當然，也可以在 Code Behind 端來設定
+    -->
+    <ContentPage.BindingContext>
+        <ViewModel:INPCPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout
+        Margin="20,0"
+        >
+        <Entry 
+            HorizontalOptions="FillAndExpand"
+            Text="{Binding MyEntry}"/>
+
+        <Label
+            HorizontalOptions="FillAndExpand"
+            Text="{Binding MyLabel}"/>
+
+        <Button Text="登入" Command="{Binding 登入Command}"/>
+    </StackLayout>
+
+
+</ContentPage>

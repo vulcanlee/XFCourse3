@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XFDataBinding.Views.MainPage"
+             Title="MainPage">
+    
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Button Text="使用 Code Behind" Command="{Binding 使用CodBehindCommand}"/>
+        <Button Text="自己實作 INPC" Command="{Binding 自己實作INPCCommand}"/>
+        <Button Text="使用 Prism 的 BindableBase 類別" Command="{Binding 使用PrismBindableBase類別Command}"/>
+        <Button Text="使用 Fody" Command="{Binding 使用FodyCommand}"/>
+    </StackLayout>
+</ContentPage>

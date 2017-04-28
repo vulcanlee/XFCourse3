@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFDataBinding.Views.CodeBehindPage"
+             Title="使用 Code Behind">
+
+    <StackLayout
+        Margin="20,0"
+        >
+        <Entry x:Name="MyEntry"
+            HorizontalOptions="FillAndExpand"
+            Text=""/>
+
+        <Label x:Name="MyLabel"
+            HorizontalOptions="FillAndExpand"
+            Text=""/>
+
+        <Button x:Name="btn登入"
+            Text="登入"/>
+    </StackLayout>
+
+</ContentPage>
